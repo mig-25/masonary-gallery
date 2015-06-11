@@ -1,0 +1,13 @@
+$susy: (
+  columns: 16, 
+  gutters: 0.1, 
+  global-box-sizing: border-box, 
+  debug: (image: show-columns, color: rgba(grey, 0.5))
+  );
+
+$bp-small: 450px;
+$bp-med: 630px;
+$bp-large: 810px;
+$bp-xlarge: 990px;
+$bp-xxlarge: 1180px;
+$bp-xxxlarge: 1372px;

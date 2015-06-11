@@ -1,0 +1,25 @@
+{
+  "firstName": "testing",
+  "blogPosts": [
+  {"category": "advice"},
+  {"category": "launch" },
+  {"category": "cta" },
+  {"category": "advice" },
+  {"category": "advice" },
+  {"category": "launch" },
+  {"category": "launch" },
+  {"category": "others" },
+  {"category": "others" },
+  {"category": "advice" },
+  {"category": "advice" },
+  {"category": "others" },
+  {"category": "launch" },
+  {"category": "advice" },
+  {"category": "launch" },
+  {"category": "advice" },
+  {"category": "advice" },
+  {"category": "others" },
+  {"category": "advice" },
+  {"category": "advice" }
+  ]
+}

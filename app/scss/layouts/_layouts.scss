@@ -1,0 +1,15 @@
+// Layouts
+// =======
+
+.l-wrap {
+  display: flex;
+  align-content: stretch;
+
+  .l-container {
+    flex-grow: 1;
+  }
+}
+
+.l-container {
+  @include container;
+}

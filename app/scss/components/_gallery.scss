@@ -1,0 +1,58 @@
+@include border-box-sizing;
+
+
+.wrap {
+  @include container();
+}
+
+.masonry {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 100vw;
+font-size: 0;
+}
+
+.masonry img {
+transition: .8s opacity;
+}
+.masonry:hover img { opacity: 0.3; }
+.masonry:hover img:hover { opacity: 1; }
+
+img {width: 100%;}
+
+.column,
+.gutter {width: 0;}
+
+// .responsive {
+// @include span(3 of 12);
+//   margin-top: gutter();
+// }
+
+.responsive {
+	width:100%;
+
+@include bp($bp-small) {
+    @include span(1);
+    margin-top:gutter();
+  }	
+
+@include bp($bp-med) {
+    @include span(2);
+    margin-top:gutter();
+  }
+
+ @include bp($bp-large) {
+    @include span(3);
+    margin-top:gutter();
+  } 
+@include bp($bp-xlarge) {
+    @include span(4);
+    margin-top:gutter();
+  } 
+
+}
+
+
+
+figure {margin: 0;}
