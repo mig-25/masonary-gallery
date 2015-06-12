@@ -1,0 +1,32 @@
+{
+  "name": "susy-helpers",
+  "version": "0.0.2",
+  "authors": [
+    "Zell Liew <zellwk@gmail.com>"
+  ],
+  "main": "_susy-helpers.scss",
+  "keywords": [
+    "susy",
+    "context",
+    "gallery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/zellwk/susy-helpers",
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.2",
+    "commit": "f0e355456418b22a104180af69498e709db5b148"
+  },
+  "_source": "git://github.com/zellwk/susy-helpers.git",
+  "_target": "~0.0.2",
+  "_originalSource": "susy-helpers"
+}

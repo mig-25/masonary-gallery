@@ -1,58 +1,52 @@
 @include border-box-sizing;
 
-
 .wrap {
-  @include container();
+  @include container;
 }
 
-.masonry {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-height: 100vw;
-font-size: 0;
+// Width of Masonry gutter
+.gutter {
+  width: gutter();
 }
 
-.masonry img {
-transition: .8s opacity;
-}
-.masonry:hover img { opacity: 0.3; }
-.masonry:hover img:hover { opacity: 1; }
+// Masonry Column sizes. 
+// Notice how span is used.
+.column {
+  width: 100%;
 
-img {width: 100%;}
-
-.column,
-.gutter {width: 0;}
-
-// .responsive {
-// @include span(3 of 12);
-//   margin-top: gutter();
-// }
-
-.responsive {
-	width:100%;
-
-@include bp($bp-small) {
-    @include span(1);
-    margin-top:gutter();
-  }	
-
-@include bp($bp-med) {
-    @include span(2);
-    margin-top:gutter();
+  @include bp($bp-med) {
+    width: span(6);
   }
 
- @include bp($bp-large) {
-    @include span(3);
-    margin-top:gutter();
-  } 
-@include bp($bp-xlarge) {
-    @include span(4);
-    margin-top:gutter();
-  } 
+  @include bp($bp-large) {
+    width: span(4);
+  }
 
+  @include bp($bp-xlarge) {
+    width: span(3);
+  }
 }
 
+// Actual item sizes 
+// Span is the same as that for masonry column sizes (if your items are supopsed to be that way)
+.responsive {
+  margin: 0; // Removes margin for figure element
+  margin-top: gutter(); // Spaces between elements
+  width: 100%;
 
+  @include bp($bp-med) {
+    width: span(6);
+  }
 
-figure {margin: 0;}
+  @include bp($bp-med) {
+    width: span(6);
+  }
+
+  @include bp($bp-large) {
+    width: span(4);
+  }
+
+  @include bp($bp-xlarge) {
+    width: span(3);
+  }
+}

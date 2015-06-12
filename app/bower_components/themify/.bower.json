@@ -1,0 +1,28 @@
+{
+  "name": "themify",
+  "version": "0.1.0",
+  "homepage": "https://github.com/zellwk/themify",
+  "authors": [
+    "Zell Liew <zellwk@gmail.com>"
+  ],
+  "main": "_themify.scss",
+  "description": "Sass Mixin to create multiple themes easily",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "c3c963a6b55302f360304dc1d1e89882cc5bad5e"
+  },
+  "_source": "git://github.com/zellwk/themify.git",
+  "_target": "0.1.0",
+  "_originalSource": "themify"
+}
